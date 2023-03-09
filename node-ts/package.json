@@ -4,7 +4,7 @@
   "description": "node-ts template",
   "main": "main.ts",
   "scripts": {
-    "prepare": "npx husky install",
+    "prepare": "if [ ! -d .git ]; then git init; fi && npx husky install",
     "clean": "rm -rf coverage dist",
     "test": "npx vitest run --reporter verbose",
     "test:watch": "npx vitest --reporter verbose",
