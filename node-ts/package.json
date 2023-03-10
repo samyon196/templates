@@ -9,7 +9,7 @@
     "test": "npx vitest run --reporter verbose",
     "test:watch": "npx vitest --reporter verbose",
     "lint": "npx tsc --noEmit ; npx eslint . --fix",
-    "format": "npx prettier",
+    "format": "npx prettier -w .",
     "dev": "npx ts-node src/main.ts",
     "build": "npx tsc"
   },
